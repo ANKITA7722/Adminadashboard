@@ -1,0 +1,39 @@
+{
+  "employees": [
+    {
+      "id": "1",
+      "employee": 1,
+      "name": "ankita",
+      "city": "waghoda",
+      "salary": 35000
+    },
+    {
+      "id": "2",
+      "employee": 2,
+      "name": "gauri",
+      "city": "pandhurna",
+      "salary": 25000
+    },
+    {
+      "id": "3",
+      "employee": 3,
+      "name": "khushi",
+      "city": "ghoti",
+      "salary": 45000
+    },
+    {
+      "id": "54fe",
+      "employeeno": "12",
+      "name": "Ankita",
+      "city": "Bhopal",
+      "salary": "6757"
+    },
+    {
+      "id": "314f",
+      "employeeno": "12",
+      "name": "anshul",
+      "city": "pachmari",
+      "salary": "65000"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      table th,
+      table td {
+        padding: 15px;
+        text-align: left;
+      }
+
+      table th {
+        background-color: #009879;
+        color: #ffffff;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+      }
+
+      table tr {
+        border-bottom: 1px solid #dddddd;
+      }
+
+      table tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+      }
+
+      table tr:last-of-type {
+        border-bottom: 2px solid #009879;
+      }
+
+      table tr:hover {
+        background-color: #f1f1f1;
+      }
+
+      input[type="text"] {
+        width: 90%;
+        padding: 8px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+      }
+
+      input[type="text"]:focus {
+        border-color: #009879;
+        outline: none;
+      }
+
+      .button {
+        border: none;
+        padding: 10px 15px;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+
+      .button-edit {
+        background-color: #4caf50; /* Green */
+      }
+
+      .button-save {
+        background-color: #008cba; /* Blue */
+        display: none;
+      }
+
+      .button-delete {
+        background-color: #f44336; /* Red */
+      }
+    </style>
+  </head>
+  <body>
+    <section id="menu">
+      <div class="logo">
+          <h2>dynamic</h2>
+      </div>
+
+      <div class="items">
+         <a><li><i class="fa-solid fa-chart-pie"></i>dashboard</li></a>
+         <a href="./"><li><i class="fa-solid fa-chart-pie"></i>display data</li></a>
+         <a href="./Insert.html"><li><i class="fa-solid fa-chart-pie"></i>insert data</li></a>
+          <a href="./update.html"><li><i class="fa-solid fa-chart-pie"></i>update data</li></a>
+          <a href="./"><li><i class="fa-solid fa-chart-pie"></i>   </li></a>
+          <li><i class="fa-solid fa-chart-pie"></i>modal</li>
+          <li><i class="fa-solid fa-chart-pie"></i>blank</li>
+      </div>
+  </section>
+
+
+  <section id="interface">
+    <div class="navigation">
+        <div class="n1">
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="search">
+        </div>
+    </div>
+    
+    <div class="profile">
+        <i class="fa-regular fa-bell"></i>
+        <img src="/IMG-ankita.jpg">
+    </div>
+ </div>
+
+
+    <div id="demo"></div>
+
+
+    </section>
+    <script src="/update.js"></script>
+  </body>
+</html>
