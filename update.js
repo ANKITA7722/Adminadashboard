@@ -1,3 +1,36 @@
+function saveRow(id){
+  let myemp = document.getElementById(`eno-${id}`).value;
+  let myName = document.getElementById(`nm-${id}`).value;
+  let mycity = document.getElementById(`city-${id}`).value;
+  let mysalary = document.getElementById(`salary-${id}`).value;
+  
+  let url = `http://localhost:3000/employees/${id}`;
+  fetch(url, {
+    method: "put",
+    body:JSON.stringify({
+      employeeno: myemp,
+      name: myName,
+      city: mycity,
+      salary: mysalary,
+    }),
+    headers:{
+      "Content-type":"application/json;charset=utf-8",
+    },
+  })
+  .then((Response) => {
+  
+if(Response.ok){
+  alert("Data update successfully");
+  dataShow();
+}else{
+  throw new Error("Error while updating");
+}
+  })
+  .catch((error)=>{
+    console.log(error);
+  }); 
+}
+
 function editRow(id){
   document.getElementById(`eno-${id}`).removeAttribute('readonly');
   document.getElementById(`nm-${id}`).removeAttribute('readonly');
