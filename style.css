@@ -8,6 +8,9 @@ body{
     background-color: rgb(53, 32, 32);
     width: 300px;
     height: 100%;
+    position: fixed;
+    left: 0;
+    z-index: 0;
 
     
 }
@@ -57,16 +60,25 @@ color: white;
     font-weight: 300px;
     transition: 0.3s ease;
 }
+#menu-btn{
+display: initial;
+}
 #interface{
     width: calc(100% - 300px);
+    margin-left: 300px;
+    position: relative;
 }
 #interface .navigation{
+    width: 200%;
     display: flex;
     align-items: center;
     justify-content: space-around;
     background-color:white;
     padding: 15px 30px;
     border-bottom: 3px solid rgb(212, 34, 173);
+    position: fixed;
+    width: calc(100% - 300px);
+
 }
 #interface .navigation .search{
     display: flex;
@@ -103,11 +115,26 @@ color: white;
     object-fit: cover;
     border-radius: 50px;
 }
+
+.n1{
+display: flex;
+justify-content: flex-start;
+align-items: center;
+}
+
+#menu-btn{
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 20px;
+    display: none;
+}
 .i-name{
     color: gray;
     padding: 30px 30px 0 30px;
     font-size: 24px;
     font-weight: 700;
+    margin-top: 70px;
 }
 .values{
     padding: 30px 30px 0 30px;
@@ -181,4 +208,37 @@ color: white;
     justify-content: space-around;
     padding: 10px;
 } 
+
+@media screen  and (max-width: 600px){
+    #menu {
+        
+        width: 250px;
+        position: fixed;
+        left: -270px;  
+    }
+    #menu.active{
+        left: 0px;
+    }
+    #interface{
+        width: 100%;
+        margin-left: 0px;
+        display: inline-block;
+    }
+    #menu.active~ #interface{
+        width: calc(100% - 270px);
+        margin-left: 270px;
+    }
+    #interface .navigation {
+        width: 100%;
+    }
+    .values{
+justify-content: flex-start;
+    }
+    .values .val-box{
+        padding: 16px 20px;
+        margin: 10px 20px 10px 0px;
+       
+    }
+
+}
 

@@ -8,28 +8,65 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- jquery-3 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-y: hidden;
+        }
+
+        .Welcome{
+            text-align: center;
+            color:rgb(233, 153, 153);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+
+        .para{
+            text-align: center;
+            margin-top: 40px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* text-align: justify; */
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .items a{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        }
+        val-box
+    </style>
+
 </head>
 <body>
     <section id="menu">
         <div class="logo">
-            <h2>dynamic</h2>
+            <h2 style=" font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">LOGO</h2>
         </div>
  
         <div class="items">
-           <a><li><i class="fa-solid fa-chart-pie"></i>dashboard</li></a>
-           <a href="./"><li><i class="fa-solid fa-chart-pie"></i> login page</li></a>
-           <a href=""><li><i class="fa-solid fa-chart-pie"></i>display data</li></a>
-           <a href="./Insert.html"><li><i class="fa-solid fa-chart-pie"></i>insert data</li></a>
-            <a href="./update.html"><li><i class="fa-solid fa-chart-pie"></i>update data</li></a>
-            <a href="./"><li><i class="fa-solid fa-chart-pie"></i>   </li></a>
-            <li><i class="fa-solid fa-chart-pie"></i>modal</li>
-            <li><i class="fa-solid fa-chart-pie"></i>blank</li>
+           <a><li><i class="fa-solid fa-laptop"></i>Dashboard</li></a>
+           <a href="./loginpage.html"><li><i class="fa-solid fa-user"></i> Login page</li></a>
+           <a href="./Display.html"><li><i class="fa-solid fa-list"></i>Display data</li></a>
+           <a href="./Insert.html"><li><i class="fa-brands fa-slack"></i>Insert data</li></a>
+            <a href="./update.html"><li> <i class="fa-solid fa-universal-access"></i>Update data</li></a>
+            <a href="./"><li><i class="fa-solid fa-chart-pie"></i> Logout  </li></a>
+            
         </div>
     </section>
 
     <section id="interface">
         <div class="navigation">
             <div class="n1">
+                <div id="menu-btn"> 
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             <div class="search">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <input type="text" placeholder="search">
@@ -42,7 +79,10 @@
         </div>
      </div>
 
-    <h2 class="i-name">dashboard</h2>
+     
+
+    <h2 class="i-name" style=" font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; ">Dashboard</h2>
+    <h1 class="Welcome">Welcome User</h1>
     <div class="values">
     <div class="val-box">
         <i class="fa-solid fa-users"></i>
@@ -77,7 +117,15 @@
     </div>
     </div>
 
-   
+
+    <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis quos dolor, quod itaque animi ducimus quis adipisci sunt expedita consequatur necessitatibus, iure nam odio neque accusamus qui, saepe alias. Placeat?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis quos dolor, quod itaque animi ducimus quis adipisci sunt expedita consequatur necessitatibus, iure nam odio neque accusamus qui, saepe alias. Placeat?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis quos dolor, quod itaque animi ducimus quis adipisci sunt expedita consequatur necessitatibus, iure nam odio neque accusamus qui, saepe alias. Placeat?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis quos dolor, quod itaque animi ducimus quis adipisci sunt expedita consequatur necessitatibus, iure nam odio neque accusamus qui, saepe alias. Placeat?
+        
+    </p>
     </section>
+
+    <script src="Script.js"></script>
 </body>
 </html>

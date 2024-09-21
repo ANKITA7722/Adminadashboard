@@ -1,84 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-      .form-container {
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        width: 60%;
-        margin: 10px auto;
-      }
+  <style>
+    .form-container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 90%;
+      margin: 10px auto;
+    }
 
-      .form-container h2 {
-        text-align: center;
-        margin-bottom: 20px;
-      }
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
 
-      .form-container label {
-        display: block;
-        margin-bottom: 8px;
-        font-weight: bold;
-      }
+    .form-container label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
 
-      .form-container input[type="text"] {
-        width: 100%;
-        padding: 8px;
-        margin-bottom: 20px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-        transition: border-color 0.3s ease;
-      }
+    .form-container input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      transition: border-color 0.3s ease;
+    }
 
-      .form-container input[type="text"]:focus {
-        border-color: #007bff;
-      }
+    .form-container input[type="text"]:focus {
+      border-color: #007bff;
+    }
 
-      .form-container button {
-        width: 100%;
-        padding: 10px;
-        border: none;
-        border-radius: 4px;
-        background-color: #007bff;
-        color: #fff;
-        font-size: 16px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-      }
+    .form-container button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      background-color: #ff006f;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
 
-      .form-container button:hover {
-        background-color: #0056b3;
-      }
-    </style>
-  </head>
-  <body>
-    <section id="menu">
-      <div class="logo">
-          <h2>dynamic</h2>
-      </div>
+    .form-container button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
 
-      <div class="items">
-         <a><li><i class="fa-solid fa-chart-pie"></i>dashboard</li></a>
-         <a href="./"><li><i class="fa-solid fa-chart-pie"></i>display data</li></a>
-         <a href="./Insert.html"><li><i class="fa-solid fa-chart-pie"></i>insert data</li></a>
-          <a href="./update.html"><li><i class="fa-solid fa-chart-pie"></i>update data</li></a>
-          <a href="./"><li><i class="fa-solid fa-chart-pie"></i>   </li></a>
-          <li><i class="fa-solid fa-chart-pie"></i>modal</li>
-          <li><i class="fa-solid fa-chart-pie"></i>blank</li>
-      </div>
-  </section>
-  <section id="interface">
+<body>
+  <section id="menu">
+    <div class="logo">
+        <h2>dynamic</h2>
+    </div>
+
+    <div class="items">
+       <a><li><i class="fa-solid fa-laptop"></i>dashboard</li></a>
+       <a href="./"><li><i class="fa-solid fa-user"></i> login page</li></a>
+       <a href=""><li><i class="fa-solid fa-list"></i>display data</li></a>
+       <a href="./Insert.html"><li><i class="fa-brands fa-slack"></i>insert data</li></a>
+        <a href="./update.html"><li> <i class="fa-solid fa-universal-access"></i>update data</li></a>
+        <a href="./"><li><i class="fa-solid fa-chart-pie"></i>   </li></a>
+        
+    </div>
+</section>
+
+<section id="interface">
     <div class="navigation">
         <div class="n1">
+            <div id="menu-btn"> 
+                <i class="fa-solid fa-bars"></i>
+            </div>
         <div class="search">
             <i class="fa-solid fa-magnifying-glass"></i>
             <input type="text" placeholder="search">
@@ -93,6 +99,7 @@
 
 
 
+    <!-- table data entry -->
     <div class="form-container">
       <h2>Enter Details</h2>
       <label for="eno">Enter Employeeno.:</label>
@@ -109,7 +116,8 @@
 
       <button id="btn1">Data Save</button>
     </div>
-    </section>
-    <script src="insert.js"></script>
-  </body>
+  </section>
+  <script src="insert.js"></script>
+</body>
+
 </html>

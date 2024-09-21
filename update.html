@@ -9,17 +9,24 @@
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+       *{
+             margin:0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-y: hidden; 
+        }
       table {
-        width: 100%;
+        width: 100%; 
+        
         border-collapse: collapse;
         margin-bottom: 20px;
-        background-color: #fff;
+        background-color:#fff;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       }
 
       table th,
       table td {
-        padding: 15px;
+        /* padding: 15px; */
         text-align: left;
       }
 
@@ -90,38 +97,41 @@
   <body>
     <section id="menu">
       <div class="logo">
-          <h2>dynamic</h2>
+          <h2>LOGO</h2>
       </div>
 
       <div class="items">
-         <a><li><i class="fa-solid fa-chart-pie"></i>dashboard</li></a>
-         <a href="./"><li><i class="fa-solid fa-chart-pie"></i>display data</li></a>
-         <a href="./Insert.html"><li><i class="fa-solid fa-chart-pie"></i>insert data</li></a>
-          <a href="./update.html"><li><i class="fa-solid fa-chart-pie"></i>update data</li></a>
-          <a href="./"><li><i class="fa-solid fa-chart-pie"></i>   </li></a>
-          <li><i class="fa-solid fa-chart-pie"></i>modal</li>
-          <li><i class="fa-solid fa-chart-pie"></i>blank</li>
+         <a><li><i class="fa-solid fa-laptop"></i>dashboard</li></a>
+         <a href="./"><li><i class="fa-solid fa-user"></i> login page</li></a>
+         <a href=""><li><i class="fa-solid fa-list"></i>display data</li></a>
+         <a href="./Insert.html"><li><i class="fa-brands fa-slack"></i>insert data</li></a>
+          <a href="./update.html"><li> <i class="fa-solid fa-universal-access"></i>update data</li></a>
+          <a href="./"><li><i class="fa-solid fa-chart-pie"></i> Logout  </li></a>
+          
       </div>
   </section>
 
-
   <section id="interface">
-    <div class="navigation">
-        <div class="n1">
-        <div class="search">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" placeholder="search">
-        </div>
-    </div>
-    
-    <div class="profile">
-        <i class="fa-regular fa-bell"></i>
-        <img src="/IMG-ankita.jpg">
-    </div>
- </div>
+      <div class="navigation">
+          <div class="n1">
+              <div id="menu-btn"> 
+                  <i class="fa-solid fa-bars"></i>
+              </div>
+          <div class="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" placeholder="search">
+          </div>
+      </div>
+      
+      <div class="profile">
+          <i class="fa-regular fa-bell"></i>
+          <img src="/IMG-ankita.jpg">
+      </div>
+   </div>
 
 
-    <div id="demo"></div>
+
+    <div id="demo" style="margin-top: 100px;"></div>
 
 
     </section>
