@@ -1,25 +1,18 @@
 {
   "employees": [
     {
-      "employeeno": "undefined",
+      "employeeno": "01",
       "name": "ankita",
       "city": "waghoda",
       "salary": "35000",
       "id": "1"
     },
     {
-      "id": "2",
-      "employee": 2,
-      "name": "gauri",
-      "city": "pandhurna",
-      "salary": 25000
-    },
-    {
-      "id": "3",
-      "employee": 3,
-      "name": "khushi",
+      "employeeno": "undefined",
+      "name": "ankita",
       "city": "ghoti",
-      "salary": 45000
+      "salary": "45000",
+      "id": "3"
     },
     {
       "id": "54fe",
@@ -34,6 +27,13 @@
       "name": "anshul",
       "city": "pachmari",
       "salary": "65000"
+    },
+    {
+      "id": "3ee0",
+      "employeeno": "02",
+      "name": "aman",
+      "city": "bhopal",
+      "salary": "12356"
     }
   ]
 }
