@@ -1,244 +1,66 @@
-body{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .container {
     width: 100%;
-    background: whitesmoke;
-    position: relative;
+    height: 100vh;
     display: flex;
-}
-#menu {
-    background-color: rgb(53, 32, 32);
+    align-items: center;
+    justify-content: center;
+  }
+  form {
     width: 300px;
-    height: 100%;
-    position: fixed;
-    left: 0;
-    z-index: 0;
-
-    
-}
-#menu .logo{
-    display: flex;
-    align-items: center;
-    color: rgb(249, 247, 247);
-    padding: 30px 0 0 30px;
-    text-transform: capitalize;
-}
-#menu .items{
-    margin-top: 40px;
-    
-}
-
-#menu .items li{
-    list-style: none;
-    padding: 16px 0;
-    color: rgb(248, 246, 246);
-    transition: 0.3s ease;
-    text-transform: capitalize;
-}
-#menu .items li:hover{
-    background-color:black ;
-    cursor: pointer;
-}
-#menu .items li:nth-child(1){
-border-left: 4px solid white;
-}
-
-#menu .items li:hover i,#menu .items li:hover a{
-color: white;
-}
-
-#menu .items li i{
-    color:rgb(134 141 151);
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    text-size-adjust: center;
-    font-size: 14px;
-    margin: 0 10px 0 25px;
-}
-#menu .items li a{
-    text-decoration: none;
-    color: rgb(134 141 151);
-    font-weight: 300px;
-    transition: 0.3s ease;
-}
-#menu-btn{
-display: initial;
-}
-#interface{
-    width: calc(100% - 300px);
-    margin-left: 300px;
-    position: relative;
-}
-#interface .navigation{
-    width: 200%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color:white;
-    padding: 15px 30px;
-    border-bottom: 3px solid rgb(212, 34, 173);
-    position: fixed;
-    width: calc(100% - 300px);
-
-}
-#interface .navigation .search{
-    display: flex;
-    align-items: center;
-    border: 1px solid rgb(175, 172, 172);
+    padding: 20px;
     border-radius: 3px;
-    justify-content: flex-start;
-    padding: 10px 14px;
-}
-#interface .navigation .search input{
-    border: none;
-    outline: none;
-    font-size: 14px;
-}
-#interface .navigation .search i{
-    margin-right: 14px;
-}
-
-#interface .navigation .profile{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-
-}
-
-#interface .navigation .profile i{
-    margin-right: 20px;
-    font-size: 19px;
-    font-weight: 400px;
-}
-#interface .navigation .profile img{
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    border-radius: 50px;
-}
-
-.n1{
-display: flex;
-justify-content: flex-start;
-align-items: center;
-}
-
-#menu-btn{
-    color: black;
-    font-size: 20px;
-    cursor: pointer;
-    margin-right: 20px;
-    display: none;
-}
-.i-name{
-    color: gray;
-    padding: 30px 30px 0 30px;
-    font-size: 24px;
-    font-weight: 700;
-    margin-top: 70px;
-}
-.values{
-    padding: 30px 30px 0 30px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.values .val-box{
-    background-color: white;
-    width: 150px;
-    padding: 16px 20px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.values .val-box:nth-child(1) i{
-    background-color: cadetblue;
-}
-.values .val-box:nth-child(2) i{
-    background-color: rgb(95, 144, 86);
-}
-.values .val-box:nth-child(3) i{
-    background-color: rgb(188, 106, 215);
-}
-.values .val-box:nth-child(4) i{
-    background-color: rgb(209, 85, 136);
-}
-
-.values .val-box i{
-    font-size: 25px;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    border-radius: 50%;
+    background-color: rgb(63, 172, 205);
+    font-size: 12px;
+  }
+  form h1 {
     text-align: center;
+  }
+  form button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    border: 0;
+    border-radius: 3px;
+    background-color: black;
     color: white;
-    background-color: yellow;
-    margin-right: 15px;
-}
-
-.values .val-box h3{
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.values .val-box span{
-    font-size: 15px;
-    color: black;
-    text-transform: capitalize;
-}
-.board{
+    cursor: pointer;
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+  }
+  .box label {
+    font-size: 20px;
+  }
+  .box input {
+    display: block;
+    padding: 10px;
+    border-radius: 3px;
+    width: 100%;
+    font-size: 12px;
+    border: 0;
+  }
+  .box .error {
+    color: red;
+    font-size: 10px;
+    height: 15px;
+  }
+  .box input:focus {
+    outline: 0;
+  }
+  .box.success input {
+    border: 1px solid green;
+  }
+  .box.error input {
+    border: 1px solid red;
+  }
+  .link {
     text-align: center;
-    margin-top: 50px;
-    text-transform: capitalize;
-    border: 1px solid rgb(160, 151, 151);
-    justify-content: space-around;
-    width:94%;
-    margin-left: 20px ;
-}
-.board table tr th{
-    background-color: antiquewhite;
-    color: rgb(63, 62, 62);
-    padding: 10px;
-    text-transform: uppercase;
-    
-} 
-.board table tr td{
-    justify-content: space-around;
-    padding: 10px;
-} 
-
-@media screen  and (max-width: 600px){
-    #menu {
-        
-        width: 250px;
-        position: fixed;
-        left: -270px;  
-    }
-    #menu.active{
-        left: 0px;
-    }
-    #interface{
-        width: 100%;
-        margin-left: 0px;
-        display: inline-block;
-    }
-    #menu.active~ #interface{
-        width: calc(100% - 270px);
-        margin-left: 270px;
-    }
-    #interface .navigation {
-        width: 100%;
-    }
-    .values{
-justify-content: flex-start;
-    }
-    .values .val-box{
-        padding: 16px 20px;
-        margin: 10px 20px 10px 0px;
-       
-    }
-
-}
-
+    padding: 15px;
+  }
+  

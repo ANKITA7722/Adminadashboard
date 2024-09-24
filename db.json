@@ -1,13 +1,6 @@
 {
   "employees": [
     {
-      "employeeno": "01",
-      "name": "ankita",
-      "city": "waghoda",
-      "salary": "35000",
-      "id": "1"
-    },
-    {
       "employeeno": "undefined",
       "name": "ankita",
       "city": "ghoti",
