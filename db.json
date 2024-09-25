@@ -1,13 +1,6 @@
 {
   "employees": [
     {
-      "employeeno": "2",
-      "name": "kamlesh",
-      "city": "bhopal",
-      "salary": "700000",
-      "id": "3"
-    },
-    {
       "id": "54fe",
       "employeeno": "12",
       "name": "Ankita",
@@ -27,6 +20,27 @@
       "name": "aman",
       "city": "bhopal",
       "salary": "12356"
+    },
+    {
+      "employeeno": "5",
+      "name": "amisha",
+      "city": "riva",
+      "salary": "12356",
+      "id": "ec2e"
+    },
+    {
+      "id": "7290",
+      "employeeno": "1",
+      "name": "anshul",
+      "city": "panna",
+      "salary": "12356"
+    },
+    {
+      "id": "efb3",
+      "employeeno": "5",
+      "name": "amish",
+      "city": "betul",
+      "salary": "200000"
     }
   ]
 }

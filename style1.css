@@ -148,7 +148,7 @@ body {
     color: gray;
     padding: 30px 30px 0 30px;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 700px;
     margin-top: 70px;
 }
 
@@ -250,7 +250,7 @@ body {
         display: inline-block;
     }
 
-    #menu.active~#interface {
+    #menu.active ~ #interface {
         width: calc(100% - 270px);
         margin-left: 270px;
     }
@@ -270,3 +270,4 @@ body {
     }
 
 }
+
