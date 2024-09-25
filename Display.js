@@ -2,7 +2,6 @@ async function dataShow() {
     let mytable = `
       <table border="1px" width="100%" align="center" >
       <tr bgcolor="yellow">
-       <th>ID</th>
        <th>Employee No</th>
        <th>Employee Name</th>
        <th>Salary</th>
@@ -20,7 +19,6 @@ async function dataShow() {
     mydata.map((key) => {
       mytable += `
            <tr>
-             <td>${key.id}</td>
              <td>${key.employeeno}</td>
              <td>${key.name}</td>
              <td>${key.salary}</td>

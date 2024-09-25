@@ -13,7 +13,6 @@ body {
     left: 0;
     z-index: 0;
 
-
 }
 
 #menu .logo {
@@ -232,7 +231,36 @@ body {
     padding: 10px;
 }
 
-@media screen and (max-width: 600px) {
+/* input{
+    -webkit-appearance: none;
+    visibility: hidden;
+    display: none;
+}
+span{
+    position: absolute;
+    right: -40px;
+    top: 30px;
+    font-size: 25px;
+    border-radius: 3px;
+    color: aqua;
+    padding: 3px 8px;
+    cursor: pointer;
+    background-color: blue;
+
+}
+#bars{
+    background-color: red;
+
+}
+#check:checked ~ #menu{
+    transform: translateX(0);
+}
+#check:checked ~ #menu #bars{
+    display: none;
+    align-items: self-start;
+} */
+
+@media screen and (max-width: 450px) {
     #menu {
 
         width: 250px;
@@ -248,6 +276,8 @@ body {
         width: 100%;
         margin-left: 0px;
         display: inline-block;
+        display: none;
+
     }
 
     #menu.active ~ #interface {
