@@ -10,7 +10,7 @@ async function insert(){
     let url  = 'http://localhost:3000/employees';
 
     let response = await fetch(url,{
-        method: "POST",
+        method: "POST",//request bhejte hai or api se respons wapas aata hai
         body:JSON.stringify({
            employeeno: myemployeeno,
            name: myname,

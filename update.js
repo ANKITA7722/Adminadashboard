@@ -7,7 +7,7 @@ function saveRow(id){
   let url = `http://localhost:3000/employees/${id}`;
   fetch(url, {
     method: "put",
-    body:JSON.stringify({
+    body:JSON.stringify({//object ka data string me conwort karta hai
       employeeno: myemp,
       name: myName,
       city: mycity,
