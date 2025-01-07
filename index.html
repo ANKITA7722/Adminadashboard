@@ -4,146 +4,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documwap to togle the case of given charater arrayent</title>
-    <link rel="stylesheet" href="style1.css">
+    <title>Responsive Sidebar</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- jquery-3 -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            overflow-y: hidden;
-        }
-
-        .Welcome {
-            text-align: center;
-            color: rgb(233, 153, 153);
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-
-        .para {
-            text-align: center;
-            margin-top: 40px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            /* text-align: justify; */
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-
-        .items a {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            list-style: none;
-        }
-        val-box
-    </style>
-
 </head>
 
 <body>
-    /* <input type="checkbox" name="" id="check"> */
-    <section id="menu">
-        /* <label for="check">
-            <span class="fas fa-times" id="times"></span>
-            <span class="fas fa-bars" id="bars"></span>
-        </label> */
+   
+    <div id="sidebar" class="sidebar">
         <div class="logo">
-            <h2 style=" font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">LOGO</h2>
+            <h2>LOGO</h2>
+            <button id="close-btn" class="close-btn">
+                <i class="fa-solid fa-times"></i>
+            </button>
         </div>
+        <ul class="menu-items">
+            <li><a href="#"><i class="fa-solid fa-laptop"></i> Dashboard</a></li>
+            <li><a href="#"><i class="fa-solid fa-user"></i> Login Page</a></li>
+            <li><a href="#"><i class="fa-solid fa-list"></i> Display Data</a></li>
+            <li><a href="#"><i class="fa-solid fa-slack"></i> Insert Data</a></li>
+            <li><a href="#"><i class="fa-solid fa-universal-access"></i> Update Data</a></li>
+            <li><a href="#"><i class="fa-solid fa-chart-pie"></i> Logout</a></li>
+            <li><a href="#"><i class="fa-solid fa-chart-pie"></i> Signup</a></li>
+        </ul>
+    </div>
 
-        <div class="items">
-            <a href="./index.html">
-                <li><i class="fa-solid fa-laptop"></i>Dashboard</li>
-            </a>
-            <a href="./loginpage.html">
-                <li><i class="fa-solid fa-user"></i> Login page</li>
-            </a>
-            <a href="./Display.html">
-                <li><i class="fa-solid fa-list"></i>Display data</li>
-            </a>
-            <a href="./Insert.html">
-                <li><i class="fa-brands fa-slack"></i>Insert data</li>
-            </a>
-            <a href="./update.html">
-                <li> <i class="fa-solid fa-universal-access"></i>Update data</li>
-            </a>
-            <a href="./index.html">
-                <li><i class="fa-solid fa-chart-pie"></i> Logout </li>
-            </a>
-            <a href="./signup.html">
-                <li><i class="fa-solid fa-chart-pie"></i> signup </li>
-            </a>
-
-        </div>
-    </section>
-
-    <section id="interface">
-        <div class="navigation">
-            <div class="n1">
-                <div id="menu-btn">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-                <div class="search">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="text" placeholder="search">
-                </div>
+    
+    <div id="main-content" class="main-content">
+        <div class="navbar">
+            <button id="toggle-btn" class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="search">
+                <input type="text" placeholder="Search">
+                <i class="fa-solid fa-magnifying-glass"></i>
             </div>
-
             <div class="profile">
                 <i class="fa-regular fa-bell"></i>
-                <img src="/IMG-ankita.jpg">
+                <img src="/IMG-ankita.jpg" alt="Profile">
             </div>
         </div>
 
-
-
-        <h2 class="i-name" style=" font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; ">Dashboard</h2>
-        <h1 class="Welcome">Welcome User</h1>
-        <div class="values">
-            <div class="val-box">
-                <i class="fa-solid fa-users"></i>
-                <div>
-                    <h3>8,289</h3>
-                    <span>new users</span>
+        <div class="content">
+            <h1>Welcome User</h1>
+            <div class="values">
+                <div class="val-box">
+                    <i class="fa-solid fa-users"></i>
+                    <div>
+                        <h3>8,289</h3>
+                        <span>New Users</span>
+                    </div>
                 </div>
-            </div>
-
-            <div class="val-box">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <div>
-                    <h3>2,521</h3>
-                    <span>total order</span>
+                <div class="val-box">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div>
+                        <h3>2,521</h3>
+                        <span>Total Orders</span>
+                    </div>
                 </div>
-            </div>
-
-            <div class="val-box">
-                <i class="fa-solid fa-shield"></i>
-                <div>
-                    <h3>2,542</h3>
-                    <span>poduct sell</span>
+                <div class="val-box">
+                    <i class="fa-solid fa-shield"></i>
+                    <div>
+                        <h3>2,542</h3>
+                        <span>Products Sold</span>
+                    </div>
                 </div>
-            </div>
-
-            <div class="val-box">
-                <i class="fa-solid fa-hand-holding-dollar"></i>
-                <div>
-                    <h3>$6,895</h3>
-                    <span>this month</span>
+                <div class="val-box">
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                    <div>
+                        <h3>$6,895</h3>
+                        <span>This Month</span>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-   
-    <script src="Script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
